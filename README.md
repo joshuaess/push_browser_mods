@@ -2,6 +2,8 @@
 Ableton Push browser mods to enable granular drum pad categories (type -> pack name) and put 'Places' at the top of the browser. Based on Push browser category hack by DJ Limbs.
 
 ## Installation
+Mac: Download the zip, unzip, and run the install.command OR
+
 1. Download the zipped .py files from this repo
 * Open your Applications folder
 * Right click on your Ableton app
