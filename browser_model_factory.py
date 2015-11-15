@@ -39,13 +39,13 @@ def make_instruments_browser_model(browser):
     max = TagBrowserQuery(include=[['Max for Live', 'Max Instrument']], subfolder='Max for Live', root_name='max_for_live')
     plugins = make_plugins_query()
     places = PlacesBrowserQuery(subfolder=PLACES_LABEL)
-    return QueryingBrowserModel(browser=browser, queries=[instrument_rack,
+    return QueryingBrowserModel(browser=browser, queries=[places,
      drums,
+     plugins,
      instruments,
      max,
-     drum_hits,
-     plugins,
-     places])
+     instrument_rack,
+     drum_hits,])
 
 
 def make_drum_pad_browser_model(browser):
