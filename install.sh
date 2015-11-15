@@ -23,7 +23,9 @@ fi
       SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
       echo 'Creating Push_Mod folder...'
       cp -R "${ABLETON_APP}/Contents/App-Resources/MIDI Remote Scripts/Push" "${ABLETON_APP}/Contents/App-Resources/MIDI Remote Scripts/Push_Mod"
-      cp "${SCRIPT_DIR}"/*.py "${ABLETON_APP}/Contents/App-Resources/MIDI Remote Scripts/Push_Mod"
+      echo 'Installing browser mod scripts...'
+      cp "${SCRIPT_DIR}"/*.py "${ABLETON_APP}/Contents/App-Resources/MIDI Remote Scripts/Push_Mod" &&
+      echo 'Install finished...Please launch/relaunch Live and assign Push Mod to your Push in Preferences -> Midi/Sync'
       exit 0
     fi
   fi
