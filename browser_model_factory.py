@@ -42,9 +42,9 @@ def make_instruments_browser_model(browser):
     return QueryingBrowserModel(browser=browser, queries=[places,
      drums,
      plugins,
-     instruments,
      max,
      instrument_rack,
+     instruments,
      drum_hits,])
 
 
